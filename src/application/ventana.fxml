@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: ççççç;" stylesheets="@../../../VentanaLogin_simple/src/application/application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ventanaController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="450.0" fitWidth="800.0" layoutX="300.0" layoutY="115.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane layoutX="341.0" layoutY="17.0" opacity="0.83" prefHeight="416.0" prefWidth="424.0" style="-fx-background-color: #ffffff77; -fx-background-radius: 120;">
+         <children>
+            <JFXPasswordField focusColor="#405aa800" layoutX="128.0" layoutY="196.0" promptText="PASSWORD" style="-fx-border-color: #FFFFFF; -fx-border-radius: 20;" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets bottom="5.0" left="10.0" top="5.0" />
+               </padding></JFXPasswordField>
+            <JFXButton buttonType="RAISED" layoutX="136.0" layoutY="278.0" prefHeight="25.0" prefWidth="118.0" ripplerFill="#cf1ed6" style="-fx-background-color: #FE6969; -fx-background-radius: 25;" text="SING IN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="138.0" layoutY="51.0" text="YOUR LOGO" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="BLACK" layoutX="125.0" layoutY="129.0" promptText="USERNAME" style="-fx-border-color: #FFFFFF; -fx-border-radius: 20;" unFocusColor="#4d4d4d00">
+               <padding>
+                  <Insets bottom="5.0" left="10.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <JFXButton layoutX="131.0" layoutY="350.0" text="FORGOT PASSWORD" textFill="WHITE" underline="true" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
